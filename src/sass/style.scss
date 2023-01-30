@@ -1,4 +1,5 @@
 @import "./burger";
+@import "./small";
 
 *,
 *::before,
@@ -27,7 +28,9 @@ body {
 	background-color: royalblue;
 }
 
+
 .nav {
+	min-height: 4em;
 	justify-content: center;
 
 	&__box {
@@ -111,12 +114,13 @@ body {
 		bottom: 0;
 		width: 100%;
 		height: 15vh;
-		max-height: 150px;
+		max-height: 180px;
 		position: absolute;
 	}
+
 	&__box {
-		max-width: 50%;
-		transform: translateX(50%);
+		max-width: 70%;
+		margin: 0 auto;
 		border-radius: 10px;
 		overflow: hidden;
 	}
@@ -134,19 +138,11 @@ body {
 			font-weight: bold;
 		}
 	}
-	
 	.carousel-caption {
 		z-index: 2;
-		max-height: 150px;
 	}
-	
 	.carousel-indicators {
 		z-index: 4;
-	}
-	
-	.carousel-item {
-		height: 600px;
-		position: relative;
 	}
 	
 }

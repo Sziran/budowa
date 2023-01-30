@@ -1,0 +1,62 @@
+@media(max-width: 768px){
+    
+.squad {
+
+    .shadow {
+        min-height: 100px;
+    }
+	
+	&__box {
+		min-width: 100%;
+	}
+}
+
+}
+
+@media(max-width: 992px){
+
+    .nav-wrap {
+        display: none;
+    }
+    .squad {
+
+        .shadow {
+            min-height: 140px;
+        }
+        
+        &__box {
+            min-width: 100%;
+        }
+    }
+    
+    }
+
+
+    @media(max-width: 1200px){
+
+        .squad {
+        
+            .shadow {
+                min-height: 140px;
+            }
+            
+            &__box {
+                min-width: 100%;
+            }
+        }
+        
+        }
+
+        @media(max-width: 1400px){
+            .burger {
+                display: none
+            }
+
+            .squad {
+            
+                .shadow {
+                    min-height: 140px;
+                }
+            }
+            
+            }
