@@ -1,0 +1,152 @@
+@import "./burger";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.6rem;
+	// background: rgb(225,220,228);
+	// background: linear-gradient(90deg, rgba(225,220,228,1) 1%, rgba(55,74,190,0.5746673669467788) 49%, rgba(225,220,228,1) 100%);
+}
+
+.underline {
+	margin: 0 auto 40px;
+	width: 80px;
+	height: 4px;
+	background-color: royalblue;
+}
+
+.nav {
+	justify-content: center;
+
+	&__box {
+		display: flex;
+		list-style: none;
+		margin: 0;
+	}
+
+	a {
+		color: black;
+		font-size: 1.2em;
+		padding: 1em;
+		transition: all 0.4s;
+
+		&:hover {
+			background-color: black;
+			color: royalblue;
+			cursor: pointer;
+		}
+	}
+
+	&__brandlogo {
+		position: absolute;
+		top: 1.2em;
+		left: 3em;
+		i {
+			padding-right: 0.4em;
+		}
+
+		p {
+			font-size: 2rem;
+		}
+		span {
+			color: royalblue;
+		}
+	}
+}
+
+.aboutus {
+	&__textbox {
+		color: rgb(255, 255, 255);
+		padding: 3em;
+
+		h1 {
+			font-size: 3rem;
+		}
+
+		p {
+			margin-top: 1em;
+			font-size: 2rem;
+		}
+
+		span,
+		i {
+			color: royalblue;
+		}
+	}
+
+	&__img {
+		height: 80vh;
+		width: 100%;
+		background: linear-gradient(rgba(0, 0, 0, 0.83), rgba(47, 51, 75, 0.8)),
+			url("/src/img/architect-1080589_1920.jpg");
+		background-position: 10%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-size: cover;
+	}
+}
+
+.squad {
+	max-width: 100%;
+	position: relative;
+	background: rgb(225,220,228);
+	background: linear-gradient(90deg, rgba(225,220,228,1) 1%, rgba(55,74,190,0.5746673669467788) 49%, rgba(225,220,228,1) 100%);
+	
+	.shadow {
+		background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(47, 51, 75, 0.8));
+		z-index: 1;
+		bottom: 0;
+		width: 100%;
+		height: 15vh;
+		max-height: 150px;
+		position: absolute;
+	}
+	&__box {
+		max-width: 50%;
+		transform: translateX(50%);
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	&__heading {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 1em;
+		
+		h2 {
+			margin-top: 1em;
+			font-size: 2.5rem;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+	
+	.carousel-caption {
+		z-index: 2;
+		max-height: 150px;
+	}
+	
+	.carousel-indicators {
+		z-index: 4;
+	}
+	
+	.carousel-item {
+		height: 600px;
+		position: relative;
+	}
+	
+}
