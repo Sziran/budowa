@@ -4,6 +4,7 @@ const allNavItems = document.querySelectorAll('.mobile__navi')
 
 const handleNav = () => {
     nav.classList.toggle('mobile--active')
+    navBtn.classList.toggle('burger--active')
 
     allNavItems.forEach(item => {
         item.addEventListener('click', () => {

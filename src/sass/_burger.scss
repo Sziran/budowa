@@ -65,19 +65,44 @@
 	transition: all 0.4s;
 	z-index: 10;
 
-	&:hover {
-		cursor: pointer;
-		background-color: royalblue;
-	}
+	&--active {
+		background-color: transparent;
 
-	&__bar {
-		border-radius: 3px;
-		width: 30px;
-		height: 5px;
-		margin-top: 8px;
-		margin-left: 8px;
-		background-color: black;
+		&__bar {
+			transform: rotateY(180deg);
+	
 	}
 }
 
+&:hover {
+	cursor: pointer;
+	background-color: royalblue;
+}
+}
 
+&__bar,
+&__bar::after,
+&__bar::before {
+	border-radius: 3px;
+	width: 30px;
+	height: 5px;
+	background-color: black;
+	top: 45%;
+	left: 20%;
+	position: absolute;
+	content: "";
+
+	&__bar::after,
+	&__bar::before {
+		position: absolute;
+		left: 0%;
+	}
+
+	&__bar::after {
+		top: -13px;
+	}
+
+	&__bar::before {
+		top: 13px;
+	}
+}

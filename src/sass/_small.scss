@@ -1,62 +1,75 @@
-@media(max-width: 768px){
-    
-.squad {
+@media (min-width: 320px) {
+	.burger {
+		display: block;
+	}
 
-    .shadow {
-        min-height: 100px;
-    }
-	
-	&__box {
-		min-width: 100%;
+	.nav-wrap {
+		display: none;
+	}
+
+	.squad {
+		.shadow {
+			min-height: 140px;
+		}
+
+		&__box {
+			min-width: 100%;
+		}
+	}
+
+	.offers{
+		&__box{
+			flex-wrap: wrap;
+			gap: 20px;
+			padding: 1em;
+		}
 	}
 }
 
+@media (min-width: 768px) {
+	.squad {
+		.shadow {
+			min-height: 100px;
+		}
+
+		&__box {
+			min-width: 80%;
+		}
+	}
 }
 
-@media(max-width: 992px){
+@media (min-width: 992px) {
+	.nav-wrap {
+		display: block;
+	}
 
-    .nav-wrap {
-        display: none;
-    }
-    .squad {
+	.burger {
+		display: none;
+	}
 
-        .shadow {
-            min-height: 140px;
-        }
-        
-        &__box {
-            min-width: 100%;
-        }
-    }
-    
-    }
+	.squad {
+		.shadow {
+			min-height: 140px;
+		}
 
+		&__box {
+			min-width: 60%;
+		}
+	}
+}
 
-    @media(max-width: 1200px){
+@media (max-width: 1200px) {
+	.squad {
+		.shadow {
+			min-height: 140px;
+		}
+	}
+}
 
-        .squad {
-        
-            .shadow {
-                min-height: 140px;
-            }
-            
-            &__box {
-                min-width: 100%;
-            }
-        }
-        
-        }
-
-        @media(max-width: 1400px){
-            .burger {
-                display: none
-            }
-
-            .squad {
-            
-                .shadow {
-                    min-height: 140px;
-                }
-            }
-            
-            }
+@media (max-width: 1400px) {
+	.squad {
+		.shadow {
+			min-height: 140px;
+		}
+	}
+}
