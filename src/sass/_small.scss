@@ -17,11 +17,21 @@
 		}
 	}
 
-	.offers{
-		&__box{
+	.offers {
+		&__box {
 			flex-wrap: wrap;
 			gap: 20px;
 			padding: 1em;
+		}
+	}
+
+	.job {
+		.job {
+			&__card {
+				min-width: 300px;
+				width: 80%;
+				height: 400px;
+			}
 		}
 	}
 }
@@ -54,6 +64,15 @@
 
 		&__box {
 			min-width: 60%;
+		}
+	}
+	.job {
+		.job {
+			&__card {
+				min-width: 500px;
+				width: 90%;
+				height: 800px;
+			}
 		}
 	}
 }

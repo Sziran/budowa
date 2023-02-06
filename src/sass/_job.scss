@@ -1,24 +1,46 @@
 .job {
 	&__box {
 		display: flex;
-		align-items: center;
 		justify-content: space-around;
 		flex-wrap: wrap;
 		gap: 2em;
 	}
 
 	&__card {
-		display: flex;
-		justify-content: center;
 		position: relative;
-		background-color: white;
+		overflow: hidden;
 		height: 700px;
 		min-width: 700px;
-		width: 80%;
+		width: 90%;
 		border-radius: 8px;
-		overflow: hidden;
 		perspective: 800px;
 		transition: 0.8s;
+
+		&:hover {
+			.job__img {
+				transform: rotateY(180deg);
+				opacity: 0;
+				transition: 2s;
+			}
+			
+			.job__img--two {
+				transform: rotateY(180deg);
+				opacity: 0;
+				transition: 2s;
+			}
+
+			.job__rotate {
+				transform: rotateY(-180deg);
+				opacity: 1;
+				transition: 2s;
+			}
+			
+			.job__rotate--two {
+				transform: rotateY(-180deg);
+				opacity: 1;
+				transition: 2s;
+			}
+		}
 	}
 
 	&__img {
@@ -26,50 +48,36 @@
 		height: 100%;
 		background-position: center;
 		background-size: cover;
+		transition: 0.8s;
+		display: flex;
+		justify-content: center;
 	}
 
 	&__img--one {
 		background-image: linear-gradient(
 				rgba(0, 0, 0, 0.479),
-				rgba(26, 26, 31, 0.719)),
+				rgba(26, 26, 31, 0.719)
+			),
 			url("/src/img/dest.jpg");
 	}
 
 	&__img--two {
 		background-image: linear-gradient(
 				rgba(0, 0, 0, 0.479),
-				rgba(26, 26, 31, 0.719)),
-			url("/src/img/dest.jpg");
-	}
-
-	&__text,
-	.rotate__text {
-		position: absolute;
-		bottom: 15%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color: royalblue;
-
-		h3 {
-			font-weight: bold;
-			font-size: 3rem;
-		}
-	}
-	&__text {
-		opacity: 1;
-	}
-
-	.rotate__text {
-		opacity: 0;
+				rgba(26, 26, 31, 0.719)
+			),
+			url("/src/img/bath1.jpg");
 	}
 
 	&__rotate {
 		display: flex;
 		position: absolute;
+		justify-content: center;
+		background-position: center;
+		background-size: cover;
 		background-image: linear-gradient(
-				rgba(0, 0, 0, 0.144),
-				rgba(26, 26, 31, 0.301)
+				rgba(0, 0, 0, 0.062),
+				rgba(15, 15, 17, 0.719)
 			),
 			url("/src/img/good.jpg");
 		top: 0;
@@ -80,10 +88,38 @@
 		overflow: hidden;
 		opacity: 0;
 		transition: 0.8s;
+		transform: rotateY(0deg);
 
-		&:hover  {
-			transform: rotateY(-180deg);
-			opacity: 1;
+		&--two {
+			background-image: linear-gradient(
+				rgba(0, 0, 0, 0.062),
+				rgba(15, 15, 17, 0.719)
+			),
+			url("/src/img/bath2.jpg");
 		}
+	}
+
+	&__text,
+	.rotate__text {
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		bottom: 15%;
+		background: rgb(255, 255, 255);
+		background: linear-gradient(
+			90deg,
+			rgba(255, 255, 255, 1) 25%,
+			rgb(196, 193, 193) 39%,
+			rgb(236, 236, 241) 76%
+		);
+		margin: 2em;
+		font-weight: bold;
+		font-size: 3rem;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.rotate__text {
+		transform: rotateY(180deg);
 	}
 }

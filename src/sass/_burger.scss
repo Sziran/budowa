@@ -114,11 +114,11 @@
 		}
 
 		&__bar::after {
-			transform: rotate(45deg);
+			transform: rotateX(45deg);
 		}
 
 		&__bar::before {
-			transform: rotate(-45deg);
+			transform: rotateX(-45deg);
 		}
 	}
 
