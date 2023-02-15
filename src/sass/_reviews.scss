@@ -1,0 +1,30 @@
+.reviews {
+	&__box {
+		position: relative;
+		margin: 2em;
+		padding: 2em;
+		border-radius: 8px;
+		box-shadow: 3px 3px 10px #2e2e2e2e;
+		background: rgb(255, 255, 255);
+		background: linear-gradient(
+			90deg,
+			rgba(255, 255, 255, 1) 17%,
+			rgba(232, 236, 241, 1) 49%,
+			rgba(186, 186, 195, 1) 96%
+		);
+	}
+
+	&__box-img {
+		position: absolute;
+		top: 8%;
+		left: 75%;
+		transform: translate(-50%, -50%);
+
+		img {
+			width: 80px;
+			height: 80px;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+}

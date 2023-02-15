@@ -1,0 +1,41 @@
+.contact {
+
+    &__box {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        gap: 4em;
+        padding: 0 4em;
+        margin: 0 2em;
+    }
+
+    &__title {
+        font-size: 2rem;
+    }
+
+    a{
+        font-size: 1.5rem;
+        text-decoration: none;
+        padding: .5em 0;
+        color: black;
+    }
+
+    .link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h3 {
+        font-weight: bold;
+    }
+   
+    .link-3 {
+        display: inline;
+
+        a {
+            padding: .2em;
+            font-size: 3.8rem;
+        }
+    }
+    
+}

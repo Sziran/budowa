@@ -34,6 +34,13 @@
 			}
 		}
 	}
+
+	.contact {
+		&__box {
+			flex-wrap: wrap;
+			text-align: center;
+		}
+	}
 }
 
 @media (min-width: 768px) {

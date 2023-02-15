@@ -34,7 +34,7 @@
                 <a class="nav-link" href="#offers">Oferta</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="#">Kontakt</a>
+                <a class="nav-link" href="#contact">Kontakt</a>
             </li>
         </ul>
     </div>
@@ -51,8 +51,8 @@
 <nav class="mobile">
     <a href="#" class="mobile__navi">Home</a>
     <a href="#aboutus" class="mobile__navi">O nas</a>
-    <a href="" class="mobile__navi">Oferta</a>
-    <a href="" class="mobile__navi">Kontakt</a>
+    <a href="#offers" class="mobile__navi">Oferta</a>
+    <a href="#contact" class="mobile__navi">Kontakt</a>
 </nav>
 
     <main>
@@ -132,48 +132,50 @@
 
         </section>
 
-        <section class="offers wrapper" id="#offers">
+        <section class="offers" id="offers">
 
-            <div class="squad__heading pt-5">
-                <h2>Nasza Oferta</h2>
+            <div class="wrapper">
+                <div class="squad__heading pt-5">
+                    <h2>Nasza Oferta</h2>
+                </div>
+                <div class="underline"></div>
+
+                <div class="offers__box">
+                    <div class="offers__card">
+                        <img src="/src/img/reno.jpg" class="card-img-top offers__img" alt="Kuchnia w stylu nowoczesny">
+                        <div class="card-body">
+                            <h3 class="offers__title">Wykończenia</h3>
+                            <p class="offers__text">Zajmujemy sie wykończeniami wnętrz w konkurencyjnej cenie.</p>
+                            <p class="offers__text--small">Sprawdź resztę naszych ofert, może znajdziesz to czego
+                                potrzebujesz.</p>
+                            <a href="#" class="btn btn-primary">Przejdz do ofert</a>
+                        </div>
+                    </div>
+
+                    <div class="offers__card">
+                        <img src="/src/img/hydra.png" class="card-img-top offers__img" alt="hydraulik z narzędziami">
+                        <div class="offers__body">
+                            <h3 class="offers__title">Hydraulika</h3>
+                            <p class="offers__text">Zajmujemy się hydrauliką, posiadamy profesjonaly sprzęt.</p>
+                            <p class="offers__text--small">Sprawdź resztę naszych ofert, może znajdziesz to czego
+                                potrzebujesz.</p>
+                            <a href="#" class="btn btn-primary">Przejdz do ofert</a>
+                        </div>
+                    </div>
+
+                    <div class="offers__card">
+                        <img src="/src/img/repair.jpg" class="card-img-top offers__img"
+                            alt="wiertarka przykręcająca zamek">
+                        <div class="card-body">
+                            <h3 class="offers__title">Montaże</h3>
+                            <p class="offers__text">Jesteśmy w stanie zamontować wszystko w bardzo szybkim czasie.</p>
+                            <p class="offers__text--small">Sprawdź resztę naszych ofert, może znajdziesz to czego
+                                potrzebujesz.</p>
+                            <a href="#" class="btn btn-primary">Przejdz do ofert</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="underline"></div>
-
-            <div class="offers__box">
-                <div class="offers__card">
-                    <img src="/src/img/reno.jpg" class="card-img-top offers__img" alt="Kuchnia w stylu nowoczesny">
-                    <div class="card-body">
-                        <h3 class="offers__title">Wykończenia</h3>
-                        <p class="offers__text">Zajmujemy sie wykończeniami wnętrz w konkurencyjnej cenie.</p>
-                        <p class="offers__text--small">Sprawdź resztę naszych ofert, może znajdziesz to czego
-                            potrzebujesz.</p>
-                        <a href="#" class="btn btn-primary">Przejdz do ofert</a>
-                    </div>
-                </div>
-
-                <div class="offers__card">
-                    <img src="/src/img/hydra.png" class="card-img-top offers__img" alt="hydraulik z narzędziami">
-                    <div class="offers__body">
-                        <h3 class="offers__title">Hydraulika</h3>
-                        <p class="offers__text">Zajmujemy się hydrauliką, posiadamy profesjonaly sprzęt.</p>
-                        <p class="offers__text--small">Sprawdź resztę naszych ofert, może znajdziesz to czego
-                            potrzebujesz.</p>
-                        <a href="#" class="btn btn-primary">Przejdz do ofert</a>
-                    </div>
-                </div>
-
-                <div class="offers__card">
-                    <img src="/src/img/repair.jpg" class="card-img-top offers__img" alt="wiertarka przykręcająca zamek">
-                    <div class="card-body">
-                        <h3 class="offers__title">Montaże</h3>
-                        <p class="offers__text">Jesteśmy w stanie zamontować wszystko w bardzo szybkim czasie.</p>
-                        <p class="offers__text--small">Sprawdź resztę naszych ofert, może znajdziesz to czego
-                            potrzebujesz.</p>
-                        <a href="#" class="btn btn-primary">Przejdz do ofert</a>
-                    </div>
-                </div>
-            </div>
-
         </section>
 
         <section class="job wrapper">
@@ -224,7 +226,9 @@
                         </p>
                         <strong>Jessica</strong>
                     </div>
+                </div>
 
+                <div class="reviews__box">
                     <div class="reviews__box-img">
                         <img src="/src/img/rev2.jpg" alt="Brajanek">
                     </div>
@@ -236,7 +240,9 @@
                         </p>
                         <strong>Brajanek</strong>
                     </div>
+                </div>
 
+                <div class="reviews__box">
                     <div class="reviews__box-img">
                         <img src="/src/img/rev3.jpg" alt="Karyna">
                     </div>
@@ -250,14 +256,64 @@
                     </div>
                 </div>
 
-            </div>
-
         </section>
 
     </main>
 
+    <footer>
+        <section class="contact" id="contact">
+            <div class="contact wrapper">
+                <div class="squad__heading pt-5">
+                    <h2>Kontakt</h2>
+                </div>
+                <div class="underline"></div>
 
-   
+                <div class="contact__box">
+                    <div class="link link-1">
+                        <h3 class="contact__title">O nas</h3>
+                        <a href="#">Home</a>
+                        <a href="">Blog</a>
+                        <a href="">Szkolenia</a>
+                    </div>
+
+                    <div class="link link-2">
+                        <h3 class="contact__title">Skontaktuj się z nami</h3>
+                        <a href="">Praca</a>
+                        <a href="">Pomoc</a>
+                        <a href="">Kontakt</a>
+                    </div>
+
+                    <div class="link link-3">
+                        <h3 class="contact__title">Znajdziesz nas</h3>
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/"target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/"target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+    <div class="foot">
+        <p> &copy; <span class="footer__year"></span> Chad-Bud Group Company.</p>
+    </div>
+</section>
+
+
+<!-- js
+
+const footerYear = document.querySelector('.footer__year')
+
+const handleCurrentYear = () => {
+    const year = (new Date).getFullYear();
+    footerYear.innerText = year;
+}
+
+handleCurrentYear(); -->
+    </footer>
+
+
+    
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
